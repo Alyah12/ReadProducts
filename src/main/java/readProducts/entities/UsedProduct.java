@@ -1,6 +1,7 @@
 package readProducts.entities;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class UsedProduct extends Product {
     private Date manufactured;
@@ -13,6 +14,9 @@ public class UsedProduct extends Product {
         super(name, price);
         this.manufactured = manufactured;
 
+    }
+
+    public UsedProduct(String name, double price, LocalDate date) {
     }
 
     public Date getManufactured() {
